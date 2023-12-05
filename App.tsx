@@ -16,6 +16,7 @@ import {
 } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import LoginPageComponent from './src/login.page';
+import ForgotPasswordPage from './src/forgotPassword.page';
 const theme = createTheme({
   lightColors: {
     ...Platform.select({
@@ -46,7 +47,7 @@ function App(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaProvider>
-        <LoginPageComponent />
+        <ForgotPasswordPage />
       </SafeAreaProvider>
     </ThemeProvider>
   );
